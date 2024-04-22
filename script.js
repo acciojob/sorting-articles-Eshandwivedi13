@@ -7,7 +7,7 @@ bands.sort((a,b) => {
 })
 for(let b of bands){
 	 let newElem = document.createElement('li');
-	newElem.style.cssText = 'padding : 8px; list-style : square;'
+	newElem.style.cssText = 'padding : 20px; list-style : square;'
     newElem.innerText = b;
     lists.appendChild(newElem); 
 	lists.appendChild(document.createElement('hr'));
