@@ -11,10 +11,19 @@ bands.sort((a,b) => {
   }
 })
 for(let b of bands){
-	  let newElem = document.createElement('li');
+	//  let newElem = document.createElement('li');
+	// newElem.style.cssText = 'padding : 23px; list-style : square; padding-right:250px; overflow: hidden;'
+ //    newElem.innerText = b;
+ //    lists.appendChild(newElem); 
+	// let divElem = document.createElement('div');
+	// divElem.style.cssText = "width : 100%; border-top : 1px solid grey; color : #f7f7f7"
+	// lists.appendChild(divElem);
+
+	let newElem = document.createElement('li');
     newElem.style.cssText = 'padding : 23px; list-style : square; padding-right:250px; overflow: hidden;'
     newElem.innerText = b;
     lists.appendChild(newElem); 
+	
 }
 
 console.log(lists);
