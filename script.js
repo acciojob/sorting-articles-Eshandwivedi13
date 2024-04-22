@@ -1,5 +1,5 @@
 const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
-let lists = document.querySelector("#band");
+let lists = document.querySelector("#bands");
 console.log(lists, "abc")
 bands.sort((a,b) => {
 	if(a > b) return 1;
@@ -7,10 +7,12 @@ bands.sort((a,b) => {
 })
 for(let b of bands){
 	 let newElem = document.createElement('li');
-	newElem.style.cssText = 'padding : 20px; list-style : square;'
+	newElem.style.cssText = 'padding : 23px; list-style : square; padding-right:250px; overflow: hidden;'
     newElem.innerText = b;
     lists.appendChild(newElem); 
-	lists.appendChild(document.createElement('hr'));
+	let divElem = document.createElement('div');
+	divElem.style.cssText = "width : 100%; border-top : 2px solid grey"
+	lists.appendChild(divElem);
 }
 
 console.log(lists);
