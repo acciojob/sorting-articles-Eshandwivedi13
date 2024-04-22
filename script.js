@@ -2,8 +2,13 @@ const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'N
 let lists = document.querySelector("#bands");
 console.log(lists, "abc")
 bands.sort((a,b) => {
-	if(a > b) return 1;
-	else return -1;
+  const bandA = a.replace(/^(a |the |an )/i, '').toUpperCase();//
+  const bandB = b.replace(/^(a |the |an )/i, '').toUpperCase();
+  if (bandA > bandB) {
+    return 1;
+  } else {
+    return -1;
+  }
 })
 for(let b of bands){
 	 let newElem = document.createElement('li');
