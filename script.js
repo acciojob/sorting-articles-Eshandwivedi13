@@ -11,7 +11,7 @@ for(let b of bands){
     newElem.innerText = b;
     lists.appendChild(newElem); 
 	let divElem = document.createElement('div');
-	divElem.style.cssText = "width : 100%; border-top : 2px solid grey"
+	divElem.style.cssText = "width : 100%; border-top : 1px solid grey; color : #f7f7f7"
 	lists.appendChild(divElem);
 }
 
